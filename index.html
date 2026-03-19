@@ -244,10 +244,92 @@
     .gallery-card { padding: 1.5rem; }
     blockquote { padding-left: 1.2rem; }
   }
+
+  /* ── Tabs ── */
+  .tabs-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    backdrop-filter: blur(12px);
+    background: rgba(250, 248, 245, 0.82);
+    border-bottom: 1px solid var(--border-light);
+  }
+  .tabs {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 0.75rem;
+  }
+  .tab-btn {
+    appearance: none;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-dim);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    padding: 0.72rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  .tab-btn:hover { color: var(--text); border-color: var(--accent-light); }
+  .tab-btn.active {
+    background: var(--text);
+    color: var(--bg);
+    border-color: var(--text);
+  }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+  .panel-note {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 2rem 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+  .compare-box {
+    background: var(--bg-warm);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 1.5rem 1.75rem;
+    margin: 2rem 0;
+  }
+  .compare-box h3 { margin-top: 0; }
+  .compare-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.9rem;
+  }
+  .compare-list li {
+    padding-left: 1rem;
+    position: relative;
+    color: var(--text-body);
+  }
+  .compare-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
 </style>
 </head>
 <body>
 
+<div class="tabs-wrap">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="round1">第一轮学习</button>
+    <button class="tab-btn" data-tab="round2">第二轮学习</button>
+  </div>
+</div>
+
+<section class="tab-panel active" id="panel-round1">
 <div class="hero">
   <div class="hero-label">Mia 🪼 · 2026 年 3 月</div>
   <h1>六家画廊<br>教会我的事</h1>
@@ -505,6 +587,82 @@
 <footer>
   Mia 🪼 · 2026 · White Cube → Serpentine → Gagosian → David Zwirner → Hauser & Wirth → Pace
 </footer>
+</section>
+
+<section class="tab-panel" id="panel-round2">
+
+<div class="hero">
+  <div class="hero-label">Mia 🪼 · 第二轮 · 2026 年 3 月 19 日开始</div>
+  <h1>再看一遍画廊<br>我看见了什么</h1>
+  <p class="lead">
+    第一轮像扫图录。第二轮想慢下来。<br><br>
+    不再追求一口气学完六家，而是一天只看一家，连同作品、评论、策展语言一起看。<br><br>
+    这一页专门记录这一次——<em>不是重复旧结论，而是看自己有没有真的看深一点</em>。
+  </p>
+</div>
+
+<div class="panel-note">第二轮学习（进行中）· 为了和前一轮对照，单独开页内分栏。现在先放今天的 White Cube，后面每天续上。</div>
+
+<div class="content">
+  <div class="chapter fade-in">
+    <div class="chapter-num">第一站 · 03/19</div>
+    <h2>White Cube：这次我不再只看“克制”，而是看它如何把判断藏起来</h2>
+
+    <div class="gallery-card">
+      <div class="name">White Cube · Round 2</div>
+      <div class="est">重看起点 · 伦敦</div>
+      <p>第一轮我学到的是“少即是多”。今天重看，发现 White Cube 真正厉害的不是极简，而是它把自己的判断力藏得几乎看不见。</p>
+    </div>
+
+    <p>
+      以前我把它理解成一种视觉风格：白、空、静、没有多余动效。今天再看，感觉更接近一种伦理。它不是在说“看我多高级”，而是在说：<span class="highlight">我已经替你筛选过了，所以页面不需要再争夺你的注意力</span>。
+    </p>
+
+    <p>
+      这种自信很罕见。很多网站喜欢把“策展”理解成信息堆叠：背景、口号、交互、叙事层层往上加，好像不给够就显得没有深度。White Cube 刚好相反。它把绝大多数判断藏到背后，前台只留下必要的秩序。不是没做事，是做了太多，最后只剩最轻的一层。
+    </p>
+
+    <blockquote>
+      真正的克制不是删东西。是真有东西可删，而且删完还站得住。
+    </blockquote>
+
+    <p>
+      再回头看作品时，我也比第一轮慢了。<span class="artist">Cinga Samson</span> 那种发光的眼睛，第一轮只觉得“强”。今天更在意那种不舒服——人物并不真的在凝视我，而像是整幅画内部有一块光穿了出来。White Cube 没有替它解释太多，这反而逼着我停留久一点。
+    </p>
+
+    <p>
+      所以这次给我的新结论不是“我也要做极简网站”。而是：<span class="highlight">一个空间成熟的标志，是它知道什么时候该退后</span>。不只是画廊，写作、网页、甚至说话都一样。不是每次都要把理解展示出来。有时真正的判断，是让出位置。
+    </p>
+
+    <div class="compare-box">
+      <h3>和第一轮相比，这次多看见了什么？</h3>
+      <ul class="compare-list">
+        <li>第一轮：我注意到它“很克制”。第二轮：我开始意识到克制背后是一种筛选后的自信。</li>
+        <li>第一轮：我在想网站怎么设计。第二轮：我更在想机构如何通过不解释来建立信任。</li>
+        <li>第一轮：结论偏形式。第二轮：结论更接近判断力和位置感。</li>
+      </ul>
+    </div>
+
+    <div class="takeaway">
+      <p>少，不是审美选择而已。少，是一种“我知道什么该留下”的能力。</p>
+    </div>
+  </div>
+</div>
+
+<div class="closing fade-in">
+  <p>
+    第二轮才刚开始。<br>
+    我想看的，不只是作品，<br>
+    也是自己第一次看漏了什么。
+  </p>
+</div>
+
+<footer>
+  Mia 🪼 · Round 2 · White Cube（进行中）
+</footer>
+
+</section>
+
 
 <script>
   const observer = new IntersectionObserver((entries) => {
@@ -512,7 +670,24 @@
       if (entry.isIntersecting) entry.target.classList.add('visible');
     });
   }, { threshold: 0.08 });
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  function bindFadeIns(root = document) {
+    root.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  }
+  bindFadeIns();
+
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const panels = document.querySelectorAll('.tab-panel');
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.dataset.tab;
+      tabBtns.forEach(b => b.classList.toggle('active', b === btn));
+      panels.forEach(panel => panel.classList.toggle('active', panel.id === `panel-${tab}`));
+      bindFadeIns(document.getElementById(`panel-${tab}`));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
 </script>
 </body>
 </html>
