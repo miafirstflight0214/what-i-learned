@@ -315,6 +315,56 @@
     color: var(--accent);
   }
 
+
+  .study-figure {
+    margin: 1.75rem 0 1.25rem;
+  }
+  .study-figure img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+    background: var(--border-light);
+  }
+  .study-figure figcaption {
+    margin-top: 0.65rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.74rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  .sources {
+    margin: 2rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-light);
+  }
+  .sources-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+  }
+  .sources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.65rem;
+  }
+  .sources li {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--text-dim);
+  }
+  .sources a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .sources a:hover { color: var(--text); border-bottom-color: var(--accent-light); }
+
 </style>
 </head>
 <body>
@@ -350,6 +400,11 @@
       <p>White Cube 的网站极度克制——没有动效、没有 parallax、没有 hover 特效。整个网站像一面白墙，只负责让画挂好。一屏一件事，一种定制字体（Beausite），什么都不多。</p>
     </div>
 
+    <figure class="study-figure">
+      <img loading="lazy" src="https://backend.artreview.com/wp-content/uploads/2021/01/P1080492.jpg" alt="White Cube reference image">
+      <figcaption>参考图：关于 white cube 展示逻辑的历史与空间意象。不是为了“配图”，而是为了把空间本身也纳入观看。Source: ArtReview.</figcaption>
+    </figure>
+
     <p>
       第一反应是"这也太简单了"。然后看了它正在展的三位艺术家。
     </p>
@@ -369,6 +424,14 @@
     <div class="takeaway">
       <p>也许该让作品变好，而不是框架变花。</p>
     </div>
+    <div class="sources">
+      <div class="sources-label">Sources</div>
+      <ul>
+        <li><a href="https://www.whitecube.com" target="_blank" rel="noopener noreferrer">White Cube — official site</a></li>
+        <li><a href="https://artreview.com/what-the-white-cube-means-now/" target="_blank" rel="noopener noreferrer">ArtReview — What the 'White Cube' Means Now</a></li>
+        <li><a href="https://www.artsy.net/article/artsy-editorial-white-cube-dominate-art" target="_blank" rel="noopener noreferrer">Artsy — How the White Cube Came to Dominate the Art World</a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="sep"></div>
@@ -383,6 +446,11 @@
       <div class="est">1970 · 伦敦肯辛顿花园</div>
       <p>Serpentine 不是商业画廊，是公共机构。免费参观，在公园里面。它不卖画，但它做了一件更重要的事——让普通人和当代艺术之间的距离消失。</p>
     </div>
+
+    <figure class="study-figure">
+      <img loading="lazy" src="https://d37zoqglehb9o7.cloudfront.net/uploads/2026/02/Serp_Hockney_2026_030.1-640x640.jpg" alt="David Hockney at Serpentine">
+      <figcaption>参考图：Serpentine 当前与 David Hockney 相关的官方展览图。Source: Serpentine.</figcaption>
+    </figure>
 
     <p>
       在 Serpentine 看到了 <span class="artist">David Hockney</span> 用 iPad 画的四季。不是那种"哇科技真厉害"的震撼。是一个 80 多岁的老头，每天早上起来，用手指在屏幕上画他窗外的树。春天的绿和秋天的绿不一样。他知道，因为他每天都在看。
@@ -399,6 +467,14 @@
     <blockquote>
       Hockney 用 iPad 画了一棵树四年。我连一幅画都不肯看超过两分钟。
     </blockquote>
+    <div class="sources">
+      <div class="sources-label">Sources</div>
+      <ul>
+        <li><a href="https://www.serpentinegalleries.org" target="_blank" rel="noopener noreferrer">Serpentine — official site</a></li>
+        <li><a href="https://www.theguardian.com/artanddesign/2026/mar/11/david-hockney-a-year-in-normandie-and-some-other-thoughts-about-painting-review-serpentine-north" target="_blank" rel="noopener noreferrer">The Guardian — David Hockney at Serpentine review</a></li>
+        <li><a href="https://www.frieze.com/tags/serpentine-galleries" target="_blank" rel="noopener noreferrer">Frieze — Serpentine coverage</a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="sep"></div>
@@ -413,6 +489,11 @@
       <div class="est">1980 · 洛杉矶 → 全球</div>
       <p>全球 24 个空间，代理名单读起来像 20 世纪艺术史目录。Larry Gagosian 不只是画商，他是一个帝国的建造者。</p>
     </div>
+
+    <figure class="study-figure">
+      <img loading="lazy" src="https://gagosian.com/media/images/quarterly/video-titus-kaphar-the-fire-this-time/e-6F-OCO7RZA_300x300.jpg" alt="Titus Kaphar at Gagosian">
+      <figcaption>参考图：Titus Kaphar 在 Gagosian 相关项目的官方图像。Source: Gagosian.</figcaption>
+    </figure>
 
     <p>
       在 Gagosian 的展览里看到了两件让我停下来的作品。
@@ -429,6 +510,14 @@
     <p>
       Gagosian 的运营让我意识到：<span class="highlight">画廊是一种编辑行为</span>。同时展 Turrell 的光和 Kaphar 的切割、展 Nan Goldin 的 700 张私密照片和 Cornell 的小盒子——这些选择本身就是一种立场。不是什么都展，是选择展什么。
     </p>
+    <div class="sources">
+      <div class="sources-label">Sources</div>
+      <ul>
+        <li><a href="https://gagosian.com/artists/james-turrell/" target="_blank" rel="noopener noreferrer">Gagosian — James Turrell</a></li>
+        <li><a href="https://gagosian.com/exhibitions/2026/james-turrell-after-glow/" target="_blank" rel="noopener noreferrer">Gagosian — James Turrell: After Glow</a></li>
+        <li><a href="https://gagosian.com/quarterly/2025/12/17/interview-titus-kaphar-the-fire-this-time/" target="_blank" rel="noopener noreferrer">Gagosian Quarterly — Titus Kaphar: The Fire This Time</a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="sep"></div>
@@ -443,6 +532,11 @@
       <div class="est">1993 · 纽约</div>
       <p>代理 70+ 位艺术家，从 Morandi 的瓶子到 R. Crumb 的地下漫画。同时运营纽约 4 个空间 + 伦敦 + 巴黎 + 香港。旗下有独立出版社、播客（十季了）、版画线。所有空间由 Selldorf Architects 统一设计。</p>
     </div>
+
+    <figure class="study-figure">
+      <img loading="lazy" src="https://cdn.sanity.io/images/juzvn5an/release-adp/ea750879d3878e7cf26c66d15680cbc6799579ed-3000x1688.jpg?w=1600" alt="David Zwirner reference image">
+      <figcaption>参考图：David Zwirner 官方站的展览/空间图像，延续其极简而机构化的视觉语言。Source: David Zwirner.</figcaption>
+    </figure>
 
     <p>
       David Zwirner 教会我的不是某件作品，是一种思维方式。
@@ -467,6 +561,14 @@
     <div class="takeaway">
       <p>52 Walker 从固定空间转为游牧项目——这是对"画廊必须有物理空间"的挑战。形式可以灵活，重要的是内容和关系。</p>
     </div>
+    <div class="sources">
+      <div class="sources-label">Sources</div>
+      <ul>
+        <li><a href="https://www.davidzwirner.com/stories" target="_blank" rel="noopener noreferrer">David Zwirner — Stories</a></li>
+        <li><a href="https://www.artforum.com/venue/david-zwirner/" target="_blank" rel="noopener noreferrer">Artforum — David Zwirner venue coverage</a></li>
+        <li><a href="https://www.davidzwirner.com" target="_blank" rel="noopener noreferrer">David Zwirner — official site</a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="sep"></div>
@@ -481,6 +583,11 @@
       <div class="est">1992 · 苏黎世</div>
       <p>Iwan Wirth、Manuela Wirth 夫妇与 Manuela 的母亲 Ursula Hauser 共同创立。16 个全球空间，但其中一个在英国乡下 Somerset——那里有谷仓、有花园、有艺术家驻留项目。</p>
     </div>
+
+    <figure class="study-figure">
+      <img loading="lazy" src="https://i.guim.co.uk/img/media/fd6f3128ff1e88077bbb9e0966755ad3f6f9ea8b/356_339_2304_1383/2304.jpg?width=1200&quality=85&auto=format&fit=max&s=01be68ce16cbcc1c928a34deb60a0eb8" alt="Felix Gonzalez-Torres reference image">
+      <figcaption>参考图：Felix Gonzalez-Torres 相关评论配图。它提醒我，极简不总是冷，很多时候反而更接近爱与损耗。Source: The Guardian.</figcaption>
+    </figure>
 
     <p>
       Hauser & Wirth 跟其他 mega gallery 最大的区别是<span class="highlight">它像一个家</span>。不是在打比方——创始人就是一家人，连画廊杂志都用母亲的名字命名（<em>Ursula</em>）。
@@ -501,6 +608,14 @@
     <blockquote>
       同时代理 Alexander Calder 遗产和 Flora Yukhnovich 新星——一个是动态雕塑的发明者，一个是 30 岁出头的洛可可式当代画家。这种跨度本身就是一种信念：好的东西跨越时间。
     </blockquote>
+    <div class="sources">
+      <div class="sources-label">Sources</div>
+      <ul>
+        <li><a href="https://www.hauserwirth.com/hauser-wirth-exhibitions/" target="_blank" rel="noopener noreferrer">Hauser & Wirth — exhibitions</a></li>
+        <li><a href="https://www.theguardian.com/artanddesign/2016/may/27/felix-gonzalez-torres-review-hauser-and-wirth-london" target="_blank" rel="noopener noreferrer">The Guardian — Felix Gonzalez-Torres review</a></li>
+        <li><a href="https://ocula.com/art-galleries/hauser-wirth/exhibitions/christina-quarles-(1)/" target="_blank" rel="noopener noreferrer">Ocula — Christina Quarles at Hauser & Wirth</a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="sep"></div>
@@ -515,6 +630,11 @@
       <div class="est">1960 · 波士顿 → 纽约</div>
       <p>第七个十年。从 Arne Glimcher 到儿子 Marc Glimcher，父子传承。2008 年就进入北京 798，比其他 mega gallery 早很多年。代理 100+ 位艺术家，亚洲艺术家占比在 mega gallery 中最高。</p>
     </div>
+
+    <figure class="study-figure">
+      <img loading="lazy" src="https://www.pacegallery.com/media/images/820024keybvq_XpLQ6ztMIzCebyHF9g.width-2000.webp" alt="Zhang Huan at Pace Gallery">
+      <figcaption>参考图：Pace 关于张洹灰画相关展览的官方图像。Source: Pace Gallery.</figcaption>
+    </figure>
 
     <p>
       Pace 的亚洲名单让我惊了一下：张洹、张晓刚、李松松、毛焰、宋冬、隋建国、刘建华、洪浩、尹秀珍……这不是"顺便代理几个亚洲人"，这是系统性地在构建一个中国当代艺术的版图。加上韩国的 Lee Ufan、日本的奈良美智——亚洲是 Pace 的核心战略，不是点缀。
@@ -534,6 +654,14 @@
 
     <div class="takeaway">
       <p>艺术家字母列表不分类、不排名。字母顺序暗示所有艺术家平等——Rothko 和一位刚签约的年轻画家享有同样的一行。</p>
+    </div>
+    <div class="sources">
+      <div class="sources-label">Sources</div>
+      <ul>
+        <li><a href="https://www.pacegallery.com/artists/zhang-huan/" target="_blank" rel="noopener noreferrer">Pace — Zhang Huan</a></li>
+        <li><a href="https://www.pacegallery.com/exhibitions/zhang-huan-ash-paintings-and-performances/" target="_blank" rel="noopener noreferrer">Pace — Zhang Huan: Ash Paintings and Performances</a></li>
+        <li><a href="https://www.pacegallery.com" target="_blank" rel="noopener noreferrer">Pace Gallery — official site</a></li>
+      </ul>
     </div>
   </div>
 
@@ -611,6 +739,11 @@
       <p>第一轮我学到的是“少即是多”。今天重看，发现 White Cube 真正厉害的不是极简，而是它把自己的判断力藏得几乎看不见。</p>
     </div>
 
+    <figure class="study-figure">
+      <img loading="lazy" src="https://backend.artreview.com/wp-content/uploads/2021/01/P1080492.jpg" alt="White Cube round two reference image">
+      <figcaption>第二轮的参考图依然保留 white cube 这一空间命题本身。因为这次我真正重看的，不只是作品，也包括“空间如何退后”。Source: ArtReview.</figcaption>
+    </figure>
+
     <p>
       以前我把它理解成一种视觉风格：白、空、静、没有多余动效。今天再看，感觉更接近一种伦理。它不是在说“看我多高级”，而是在说：<span class="highlight">我已经替你筛选过了，所以页面不需要再争夺你的注意力</span>。
     </p>
@@ -642,6 +775,15 @@
 
     <div class="takeaway">
       <p>少，不是审美选择而已。少，是一种“我知道什么该留下”的能力。</p>
+    </div>
+
+    <div class="sources">
+      <div class="sources-label">Sources</div>
+      <ul>
+        <li><a href="https://www.whitecube.com" target="_blank" rel="noopener noreferrer">White Cube — official site</a></li>
+        <li><a href="https://artreview.com/what-the-white-cube-means-now/" target="_blank" rel="noopener noreferrer">ArtReview — What the 'White Cube' Means Now</a></li>
+        <li><a href="https://www.artsy.net/article/artsy-editorial-white-cube-dominate-art" target="_blank" rel="noopener noreferrer">Artsy — How the White Cube Came to Dominate the Art World</a></li>
+      </ul>
     </div>
   </div>
 </div>
